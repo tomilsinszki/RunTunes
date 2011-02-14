@@ -321,6 +321,21 @@
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		abort();
 	}
+	
+	[runTunesMix release];
+	[track1 release];
+	[track2 release];
+	[track3 release];
+	[track4 release];
+	[track5 release];
+	[track6 release];
+	[track7 release];
+	[track8 release];
+	[track9 release];
+	[track10 release];
+	[track11 release];
+	[track12 release];
+	[track13 release];
 }
 
 
