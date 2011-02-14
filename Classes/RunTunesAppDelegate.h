@@ -29,5 +29,7 @@
 - (NSURL *)applicationDocumentsDirectory;
 - (void)saveContext;
 
+- (void)loadRunTunesMixData;
+
 @end
 

@@ -190,6 +190,137 @@
      */
 }
 
+- (void)loadRunTunesMixData {
+	NSManagedObjectContext *context = [self managedObjectContext];
+	NSEntityDescription *mixDescription = [NSEntityDescription entityForName:@"Mix"
+													  inManagedObjectContext:context];
+	NSManagedObject *runTunesMix = [NSEntityDescription insertNewObjectForEntityForName:[mixDescription name]
+																 inManagedObjectContext:context];
+	[runTunesMix setValue:@"RunTunes" forKey:@"displayName"];
+	[runTunesMix setValue:[NSNumber numberWithInt:60] forKey:@"mins"];
+	[runTunesMix setValue:[NSNumber numberWithFloat:137.0] forKey:@"bpm"];
+	[runTunesMix setValue:@"RunTunes" forKey:@"fileName"];
+	[runTunesMix setValue:@"mp4" forKey:@"fileType"];
+	[runTunesMix setValue:@"RunTunesSmall" forKey:@"smallImageFileName"];
+	[runTunesMix setValue:@"png" forKey:@"smallImageFileType"];
+	[runTunesMix setValue:@"RunTunesLarge" forKey:@"largeImageFileName"];
+	[runTunesMix setValue:@"png" forKey:@"largeImageFileType"];
+	
+	NSEntityDescription *trackDescription = [NSEntityDescription entityForName:@"Track" 
+														inManagedObjectContext:context];
+	NSManagedObject *track1 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track1 setValue:[NSNumber numberWithInt:1] forKey:@"trackNumber"];
+	[track1 setValue:@"Extrawelt" forKey:@"artist"];
+	[track1 setValue:@"Confuzzled" forKey:@"name"];
+	[track1 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track2 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track2 setValue:[NSNumber numberWithInt:2] forKey:@"trackNumber"];
+	[track2 setValue:@"Martin Landsky" forKey:@"artist"];
+	[track2 setValue:@"2000 Miles" forKey:@"name"];
+	[track2 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track3 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track3 setValue:[NSNumber numberWithInt:3] forKey:@"trackNumber"];
+	[track3 setValue:@"Josh Wink" forKey:@"artist"];
+	[track3 setValue:@"Airplane Electronique (Matthias Tanzmann Remix)" forKey:@"name"];
+	[track3 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track4 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track4 setValue:[NSNumber numberWithInt:4] forKey:@"trackNumber"];
+	[track4 setValue:@"Axel Bartsch Ft. Jake The Rapper" forKey:@"artist"];
+	[track4 setValue:@"Blam & Flow (Thomas Schumacher Remix)" forKey:@"name"];
+	[track4 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track5 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track5 setValue:[NSNumber numberWithInt:5] forKey:@"trackNumber"];
+	[track5 setValue:@"The Glitz" forKey:@"artist"];
+	[track5 setValue:@"Sunstep" forKey:@"name"];
+	[track5 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track6 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track6 setValue:[NSNumber numberWithInt:6] forKey:@"trackNumber"];
+	[track6 setValue:@"Dimitri Andreas" forKey:@"artist"];
+	[track6 setValue:@"Snickerz" forKey:@"name"];
+	[track6 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track7 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track7 setValue:[NSNumber numberWithInt:7] forKey:@"trackNumber"];
+	[track7 setValue:@"Oliver Huntemann" forKey:@"artist"];
+	[track7 setValue:@"NYC (Keep on Playin)" forKey:@"name"];
+	[track7 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track8 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track8 setValue:[NSNumber numberWithInt:8] forKey:@"trackNumber"];
+	[track8 setValue:@"Mutant Clan" forKey:@"artist"];
+	[track8 setValue:@"We Are" forKey:@"name"];
+	[track8 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track9 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track9 setValue:[NSNumber numberWithInt:9] forKey:@"trackNumber"];
+	[track9 setValue:@"Maetrik" forKey:@"artist"];
+	[track9 setValue:@"Relax" forKey:@"name"];
+	[track9 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track10 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track10 setValue:[NSNumber numberWithInt:10] forKey:@"trackNumber"];
+	[track10 setValue:@"Rodriguez Jr" forKey:@"artist"];
+	[track10 setValue:@"Chicky Chicky" forKey:@"name"];
+	[track10 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track11 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track11 setValue:[NSNumber numberWithInt:11] forKey:@"trackNumber"];
+	[track11 setValue:@"Sycophant Slags" forKey:@"artist"];
+	[track11 setValue:@"Keep Off" forKey:@"name"];
+	[track11 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track12 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track12 setValue:[NSNumber numberWithInt:12] forKey:@"trackNumber"];
+	[track12 setValue:@"Oliver Huntemann & Dubfire" forKey:@"artist"];
+	[track12 setValue:@"Fuego" forKey:@"name"];
+	[track12 setValue:runTunesMix forKey:@"mix"];
+	
+	NSManagedObject *track13 = [NSEntityDescription insertNewObjectForEntityForName:[trackDescription name] 
+															inManagedObjectContext:context];
+	[track13 setValue:[NSNumber numberWithInt:13] forKey:@"trackNumber"];
+	[track13 setValue:@"Mike Mind" forKey:@"artist"];
+	[track13 setValue:@"Resonate (Hobo Remix)" forKey:@"name"];
+	[track13 setValue:runTunesMix forKey:@"mix"];
+	
+	NSMutableSet *tracksInRunTunesMix = [runTunesMix mutableSetValueForKey:@"tracks"];
+	[tracksInRunTunesMix addObject:track1];
+	[tracksInRunTunesMix addObject:track2];
+	[tracksInRunTunesMix addObject:track3];
+	[tracksInRunTunesMix addObject:track4];
+	[tracksInRunTunesMix addObject:track5];
+	[tracksInRunTunesMix addObject:track6];
+	[tracksInRunTunesMix addObject:track7];
+	[tracksInRunTunesMix addObject:track8];
+	[tracksInRunTunesMix addObject:track9];
+	[tracksInRunTunesMix addObject:track10];
+	[tracksInRunTunesMix addObject:track11];
+	[tracksInRunTunesMix addObject:track12];
+	[tracksInRunTunesMix addObject:track13];
+	
+	NSError *error = nil;
+	if ( ![context save:&error] ) {
+		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		abort();
+	}
+}
+
 
 - (void)dealloc {
     
