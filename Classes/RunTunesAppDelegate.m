@@ -18,7 +18,9 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	//[self loadRunTunesMixData];
+	
     [self.window addSubview:[navigationController view]];
     [self.window makeKeyAndVisible];
     
