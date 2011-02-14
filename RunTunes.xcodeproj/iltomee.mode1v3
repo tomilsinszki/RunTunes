@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -269,6 +267,7 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>EB3F11221309CD6C0030CC32</string>
+								<string>EB3F11351309CED50030CC32</string>
 								<string>EB1771EF1308725B0049F239</string>
 								<string>2819305F112F816700ECF9B4</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
@@ -278,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>11</integer>
+									<integer>3</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -314,12 +313,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RunTunes.xcdatamodel</string>
+								<string>RunTunesAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,25 +328,24 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RunTunes.xcdatamodel</string>
+										<string>RunTunesAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EB3F11251309CD7A0030CC32</string>
+										<string>EB3F11901309DB390030CC32</string>
 										<key>history</key>
 										<array>
 											<string>EB17720D130873EA0049F239</string>
-											<string>EB17720E130873EA0049F239</string>
 											<string>EB17726613088B5A0049F239</string>
 											<string>EB17728713088D120049F239</string>
 											<string>EB17728813088D120049F239</string>
 											<string>EB17729213088D590049F239</string>
 											<string>EB1772B713088EF40049F239</string>
-											<string>EB1772DA130891450049F239</string>
 											<string>EB1772DB130891450049F239</string>
-											<string>EBA90375130925F200ECD48D</string>
-											<string>EB3F11231309CD7A0030CC32</string>
-											<string>EB3F11241309CD7A0030CC32</string>
+											<string>EB3F113D1309CF910030CC32</string>
+											<string>EB3F11451309D02D0030CC32</string>
+											<string>EB3F11721309DAB20030CC32</string>
+											<string>EB3F11731309DAB20030CC32</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
