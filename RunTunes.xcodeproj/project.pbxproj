@@ -27,6 +27,7 @@
 		EB1772C413088F430049F239 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772C013088F430049F239 /* icon@2x.png */; };
 		EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */; };
 		EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */; };
+		EB3F11AE1309E1F80030CC32 /* RunTunes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		EB1772C013088F430049F239 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
 		EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RunTunesSmall.png; path = Resources/Mixes/RunTunes/RunTunesSmall.png; sourceTree = "<group>"; };
 		EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RunTunesSmall@2x.png"; path = "Resources/Mixes/RunTunes/RunTunesSmall@2x.png"; sourceTree = "<group>"; };
+		EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = RunTunes.mp4; path = Resources/Mixes/RunTunes/RunTunes.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		EB3F11351309CED50030CC32 /* RunTunes */ = {
 			isa = PBXGroup;
 			children = (
+				EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */,
 				EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */,
 				EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */,
 			);
@@ -231,6 +234,7 @@
 				EB1772C413088F430049F239 /* icon@2x.png in Resources */,
 				EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */,
 				EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */,
+				EB3F11AE1309E1F80030CC32 /* RunTunes.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
