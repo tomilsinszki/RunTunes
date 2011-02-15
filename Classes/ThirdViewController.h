@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import "AudioPlayer.h"
+#import "AccelerationAnalyzer.h"
 
 
-@interface ThirdViewController : UIViewController {
-
+@interface ThirdViewController : UIViewController <UIAccelerometerDelegate> {
+	NSInteger sampleSize;
+	NSUInteger sampleCount;
+	AccelerationAnalyzer *analyzer;
+	AudioPlayer *audioPlayer;
 }
+
+@property (nonatomic, retain) AccelerationAnalyzer *analyzer;
 
 @end
