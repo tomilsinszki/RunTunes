@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,11 +267,9 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>EBA65551130A6769002961E1</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>EB3F11221309CD6C0030CC32</string>
-								<string>EB3F11351309CED50030CC32</string>
-								<string>EB1771EF1308725B0049F239</string>
-								<string>2819305F112F816700ECF9B4</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>14</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -313,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RunTunesAppDelegate.m</string>
+								<string>ThirdViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,24 +326,28 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RunTunesAppDelegate.m</string>
+										<string>ThirdViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EB3F11AC1309E1AB0030CC32</string>
+										<string>EBA655D0130A69E5002961E1</string>
 										<key>history</key>
 										<array>
-											<string>EB17720D130873EA0049F239</string>
-											<string>EB17726613088B5A0049F239</string>
 											<string>EB17728713088D120049F239</string>
 											<string>EB17728813088D120049F239</string>
 											<string>EB17729213088D590049F239</string>
-											<string>EB1772B713088EF40049F239</string>
 											<string>EB1772DB130891450049F239</string>
 											<string>EB3F113D1309CF910030CC32</string>
 											<string>EB3F11451309D02D0030CC32</string>
 											<string>EB3F11721309DAB20030CC32</string>
-											<string>EB3F11731309DAB20030CC32</string>
+											<string>EBA6555E130A6799002961E1</string>
+											<string>EBA6556E130A6839002961E1</string>
+											<string>EBA6557E130A6870002961E1</string>
+											<string>EBA655BB130A68E6002961E1</string>
+											<string>EBA655CC130A69E5002961E1</string>
+											<string>EBA655CD130A69E5002961E1</string>
+											<string>EBA655CE130A69E5002961E1</string>
+											<string>EBA655CF130A69E5002961E1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -403,9 +405,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>EB3F110D1309C35D0030CC32</string>
+				<string>EBA65545130A6742002961E1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>EB3F110E1309C35D0030CC32</string>
+				<string>EBA65546130A6742002961E1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -543,8 +545,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>EB6DB7CC1143B266003A2CD0</string>
 		<string>/Users/iltomee/Development/iPhone/RunTunesApps/RunTunes/RunTunes.xcodeproj</string>
 	</array>
@@ -570,7 +570,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>AudioPlayer.mm</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -587,6 +587,8 @@
 							<string>358pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -626,7 +628,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>EB6DB7CC1143B266003A2CD0</string>
-				<string>EB3F110F1309C35E0030CC32</string>
+				<string>EBA65547130A6742002961E1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

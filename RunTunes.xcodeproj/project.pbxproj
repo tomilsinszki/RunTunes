@@ -28,6 +28,25 @@
 		EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */; };
 		EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */; };
 		EB3F11AE1309E1F80030CC32 /* RunTunes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */; };
+		EBA6554F130A6762002961E1 /* AccelerationAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */; };
+		EBA65550130A6762002961E1 /* CyclicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554E130A6762002961E1 /* CyclicArray.m */; };
+		EBA65557130A6778002961E1 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBA65554130A6778002961E1 /* AudioFileReader.mm */; };
+		EBA65558130A6778002961E1 /* AudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBA65556130A6778002961E1 /* AudioPlayer.mm */; };
+		EBA65567130A682A002961E1 /* fft4g.c in Sources */ = {isa = PBXBuildFile; fileRef = EBA65563130A682A002961E1 /* fft4g.c */; };
+		EBA65568130A682A002961E1 /* OouraFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA65566130A682A002961E1 /* OouraFFT.m */; };
+		EBA65578130A685E002961E1 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65575130A685E002961E1 /* CAStreamBasicDescription.cpp */; };
+		EBA6559A130A689E002961E1 /* AAFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65583130A689E002961E1 /* AAFilter.cpp */; };
+		EBA6559B130A689E002961E1 /* BPMDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65585130A689E002961E1 /* BPMDetect.cpp */; };
+		EBA6559C130A689E002961E1 /* cpu_detect_x86_gcc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65587130A689E002961E1 /* cpu_detect_x86_gcc.cpp */; };
+		EBA6559D130A689E002961E1 /* FIFOSampleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65589130A689E002961E1 /* FIFOSampleBuffer.cpp */; };
+		EBA6559E130A689E002961E1 /* FIRFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA6558C130A689E002961E1 /* FIRFilter.cpp */; };
+		EBA6559F130A689E002961E1 /* mmx_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA6558E130A689E002961E1 /* mmx_optimized.cpp */; };
+		EBA655A0130A689E002961E1 /* PeakFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA6558F130A689E002961E1 /* PeakFinder.cpp */; };
+		EBA655A1130A689E002961E1 /* RateTransposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65591130A689E002961E1 /* RateTransposer.cpp */; };
+		EBA655A2130A689E002961E1 /* SoundTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65594130A689E002961E1 /* SoundTouch.cpp */; };
+		EBA655A3130A689E002961E1 /* sse_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65596130A689E002961E1 /* sse_optimized.cpp */; };
+		EBA655A4130A689E002961E1 /* TDStretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65598130A689E002961E1 /* TDStretch.cpp */; };
+		EBA655BF130A694C002961E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA655BE130A694C002961E1 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +78,47 @@
 		EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RunTunesSmall.png; path = Resources/Mixes/RunTunes/RunTunesSmall.png; sourceTree = "<group>"; };
 		EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RunTunesSmall@2x.png"; path = "Resources/Mixes/RunTunes/RunTunesSmall@2x.png"; sourceTree = "<group>"; };
 		EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = RunTunes.mp4; path = Resources/Mixes/RunTunes/RunTunes.mp4; sourceTree = "<group>"; };
+		EBA6554B130A6762002961E1 /* AccelerationAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccelerationAnalyzer.h; path = AccelerationAnalyzer/AccelerationAnalyzer.h; sourceTree = "<group>"; };
+		EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccelerationAnalyzer.m; path = AccelerationAnalyzer/AccelerationAnalyzer.m; sourceTree = "<group>"; };
+		EBA6554D130A6762002961E1 /* CyclicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CyclicArray.h; path = AccelerationAnalyzer/CyclicArray.h; sourceTree = "<group>"; };
+		EBA6554E130A6762002961E1 /* CyclicArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CyclicArray.m; path = AccelerationAnalyzer/CyclicArray.m; sourceTree = "<group>"; };
+		EBA65553130A6778002961E1 /* AudioFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFileReader.h; path = AudioPlayer/AudioFileReader.h; sourceTree = "<group>"; };
+		EBA65554130A6778002961E1 /* AudioFileReader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioFileReader.mm; path = AudioPlayer/AudioFileReader.mm; sourceTree = "<group>"; };
+		EBA65555130A6778002961E1 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioPlayer.h; path = AudioPlayer/AudioPlayer.h; sourceTree = "<group>"; };
+		EBA65556130A6778002961E1 /* AudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioPlayer.mm; path = AudioPlayer/AudioPlayer.mm; sourceTree = "<group>"; };
+		EBA65563130A682A002961E1 /* fft4g.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fft4g.c; path = OtherSources/OouraFFT/fft4g.c; sourceTree = "<group>"; };
+		EBA65564130A682A002961E1 /* fft4g.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fft4g.h; path = OtherSources/OouraFFT/fft4g.h; sourceTree = "<group>"; };
+		EBA65565130A682A002961E1 /* OouraFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OouraFFT.h; path = OtherSources/OouraFFT/OouraFFT.h; sourceTree = "<group>"; };
+		EBA65566130A682A002961E1 /* OouraFFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OouraFFT.m; path = OtherSources/OouraFFT/OouraFFT.m; sourceTree = "<group>"; };
+		EBA65573130A685E002961E1 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CADebugMacros.h; path = OtherSources/PublicUtility/CADebugMacros.h; sourceTree = "<group>"; };
+		EBA65574130A685E002961E1 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAMath.h; path = OtherSources/PublicUtility/CAMath.h; sourceTree = "<group>"; };
+		EBA65575130A685E002961E1 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAStreamBasicDescription.cpp; path = OtherSources/PublicUtility/CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		EBA65576130A685E002961E1 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAStreamBasicDescription.h; path = OtherSources/PublicUtility/CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		EBA65577130A685E002961E1 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAXException.h; path = OtherSources/PublicUtility/CAXException.h; sourceTree = "<group>"; };
+		EBA65583130A689E002961E1 /* AAFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AAFilter.cpp; path = OtherSources/SoundTouch/AAFilter.cpp; sourceTree = "<group>"; };
+		EBA65584130A689E002961E1 /* AAFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AAFilter.h; path = OtherSources/SoundTouch/AAFilter.h; sourceTree = "<group>"; };
+		EBA65585130A689E002961E1 /* BPMDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BPMDetect.cpp; path = OtherSources/SoundTouch/BPMDetect.cpp; sourceTree = "<group>"; };
+		EBA65586130A689E002961E1 /* BPMDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPMDetect.h; path = OtherSources/SoundTouch/BPMDetect.h; sourceTree = "<group>"; };
+		EBA65587130A689E002961E1 /* cpu_detect_x86_gcc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cpu_detect_x86_gcc.cpp; path = OtherSources/SoundTouch/cpu_detect_x86_gcc.cpp; sourceTree = "<group>"; };
+		EBA65588130A689E002961E1 /* cpu_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpu_detect.h; path = OtherSources/SoundTouch/cpu_detect.h; sourceTree = "<group>"; };
+		EBA65589130A689E002961E1 /* FIFOSampleBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FIFOSampleBuffer.cpp; path = OtherSources/SoundTouch/FIFOSampleBuffer.cpp; sourceTree = "<group>"; };
+		EBA6558A130A689E002961E1 /* FIFOSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIFOSampleBuffer.h; path = OtherSources/SoundTouch/FIFOSampleBuffer.h; sourceTree = "<group>"; };
+		EBA6558B130A689E002961E1 /* FIFOSamplePipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIFOSamplePipe.h; path = OtherSources/SoundTouch/FIFOSamplePipe.h; sourceTree = "<group>"; };
+		EBA6558C130A689E002961E1 /* FIRFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FIRFilter.cpp; path = OtherSources/SoundTouch/FIRFilter.cpp; sourceTree = "<group>"; };
+		EBA6558D130A689E002961E1 /* FIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIRFilter.h; path = OtherSources/SoundTouch/FIRFilter.h; sourceTree = "<group>"; };
+		EBA6558E130A689E002961E1 /* mmx_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mmx_optimized.cpp; path = OtherSources/SoundTouch/mmx_optimized.cpp; sourceTree = "<group>"; };
+		EBA6558F130A689E002961E1 /* PeakFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PeakFinder.cpp; path = OtherSources/SoundTouch/PeakFinder.cpp; sourceTree = "<group>"; };
+		EBA65590130A689E002961E1 /* PeakFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeakFinder.h; path = OtherSources/SoundTouch/PeakFinder.h; sourceTree = "<group>"; };
+		EBA65591130A689E002961E1 /* RateTransposer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RateTransposer.cpp; path = OtherSources/SoundTouch/RateTransposer.cpp; sourceTree = "<group>"; };
+		EBA65592130A689E002961E1 /* RateTransposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RateTransposer.h; path = OtherSources/SoundTouch/RateTransposer.h; sourceTree = "<group>"; };
+		EBA65593130A689E002961E1 /* soundtouch_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundtouch_config.h; path = OtherSources/SoundTouch/soundtouch_config.h; sourceTree = "<group>"; };
+		EBA65594130A689E002961E1 /* SoundTouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoundTouch.cpp; path = OtherSources/SoundTouch/SoundTouch.cpp; sourceTree = "<group>"; };
+		EBA65595130A689E002961E1 /* SoundTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundTouch.h; path = OtherSources/SoundTouch/SoundTouch.h; sourceTree = "<group>"; };
+		EBA65596130A689E002961E1 /* sse_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sse_optimized.cpp; path = OtherSources/SoundTouch/sse_optimized.cpp; sourceTree = "<group>"; };
+		EBA65597130A689E002961E1 /* STTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTypes.h; path = OtherSources/SoundTouch/STTypes.h; sourceTree = "<group>"; };
+		EBA65598130A689E002961E1 /* TDStretch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TDStretch.cpp; path = OtherSources/SoundTouch/TDStretch.cpp; sourceTree = "<group>"; };
+		EBA65599130A689E002961E1 /* TDStretch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDStretch.h; path = OtherSources/SoundTouch/TDStretch.h; sourceTree = "<group>"; };
+		EBA655BE130A694C002961E1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +130,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
+				EBA655BF130A694C002961E1 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +140,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EBA65551130A6769002961E1 /* AudioPlayer */,
+				EBA65549130A6750002961E1 /* AccelerationAnalyzer */,
 				1D3623240D0F684500981E51 /* RunTunesAppDelegate.h */,
 				1D3623250D0F684500981E51 /* RunTunesAppDelegate.m */,
 				EB17717D130866B30049F239 /* FirstViewController.h */,
@@ -114,6 +177,9 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EBA65581130A6893002961E1 /* SoundTouch */,
+				EBA65571130A6854002961E1 /* PublicUtility */,
+				EBA65561130A6819002961E1 /* OouraFFT */,
 				32CA4F630368D1EE00C91783 /* RunTunes_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -142,6 +208,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				28D801B30F44B63D00FB423F /* CoreData.framework */,
+				EBA655BE130A694C002961E1 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +240,81 @@
 				EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */,
 			);
 			name = RunTunes;
+			sourceTree = "<group>";
+		};
+		EBA65549130A6750002961E1 /* AccelerationAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				EBA6554B130A6762002961E1 /* AccelerationAnalyzer.h */,
+				EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */,
+				EBA6554D130A6762002961E1 /* CyclicArray.h */,
+				EBA6554E130A6762002961E1 /* CyclicArray.m */,
+			);
+			name = AccelerationAnalyzer;
+			sourceTree = "<group>";
+		};
+		EBA65551130A6769002961E1 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EBA65553130A6778002961E1 /* AudioFileReader.h */,
+				EBA65554130A6778002961E1 /* AudioFileReader.mm */,
+				EBA65555130A6778002961E1 /* AudioPlayer.h */,
+				EBA65556130A6778002961E1 /* AudioPlayer.mm */,
+			);
+			name = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		EBA65561130A6819002961E1 /* OouraFFT */ = {
+			isa = PBXGroup;
+			children = (
+				EBA65563130A682A002961E1 /* fft4g.c */,
+				EBA65564130A682A002961E1 /* fft4g.h */,
+				EBA65565130A682A002961E1 /* OouraFFT.h */,
+				EBA65566130A682A002961E1 /* OouraFFT.m */,
+			);
+			name = OouraFFT;
+			sourceTree = "<group>";
+		};
+		EBA65571130A6854002961E1 /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				EBA65573130A685E002961E1 /* CADebugMacros.h */,
+				EBA65574130A685E002961E1 /* CAMath.h */,
+				EBA65575130A685E002961E1 /* CAStreamBasicDescription.cpp */,
+				EBA65576130A685E002961E1 /* CAStreamBasicDescription.h */,
+				EBA65577130A685E002961E1 /* CAXException.h */,
+			);
+			name = PublicUtility;
+			sourceTree = "<group>";
+		};
+		EBA65581130A6893002961E1 /* SoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				EBA65583130A689E002961E1 /* AAFilter.cpp */,
+				EBA65584130A689E002961E1 /* AAFilter.h */,
+				EBA65585130A689E002961E1 /* BPMDetect.cpp */,
+				EBA65586130A689E002961E1 /* BPMDetect.h */,
+				EBA65587130A689E002961E1 /* cpu_detect_x86_gcc.cpp */,
+				EBA65588130A689E002961E1 /* cpu_detect.h */,
+				EBA65589130A689E002961E1 /* FIFOSampleBuffer.cpp */,
+				EBA6558A130A689E002961E1 /* FIFOSampleBuffer.h */,
+				EBA6558B130A689E002961E1 /* FIFOSamplePipe.h */,
+				EBA6558C130A689E002961E1 /* FIRFilter.cpp */,
+				EBA6558D130A689E002961E1 /* FIRFilter.h */,
+				EBA6558E130A689E002961E1 /* mmx_optimized.cpp */,
+				EBA6558F130A689E002961E1 /* PeakFinder.cpp */,
+				EBA65590130A689E002961E1 /* PeakFinder.h */,
+				EBA65591130A689E002961E1 /* RateTransposer.cpp */,
+				EBA65592130A689E002961E1 /* RateTransposer.h */,
+				EBA65593130A689E002961E1 /* soundtouch_config.h */,
+				EBA65594130A689E002961E1 /* SoundTouch.cpp */,
+				EBA65595130A689E002961E1 /* SoundTouch.h */,
+				EBA65596130A689E002961E1 /* sse_optimized.cpp */,
+				EBA65597130A689E002961E1 /* STTypes.h */,
+				EBA65598130A689E002961E1 /* TDStretch.cpp */,
+				EBA65599130A689E002961E1 /* TDStretch.h */,
+			);
+			name = SoundTouch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +393,24 @@
 				EB17717F130866B30049F239 /* FirstViewController.m in Sources */,
 				EB177209130873A60049F239 /* SecondViewController.m in Sources */,
 				EB17724D13088A530049F239 /* ThirdViewController.m in Sources */,
+				EBA6554F130A6762002961E1 /* AccelerationAnalyzer.m in Sources */,
+				EBA65550130A6762002961E1 /* CyclicArray.m in Sources */,
+				EBA65557130A6778002961E1 /* AudioFileReader.mm in Sources */,
+				EBA65558130A6778002961E1 /* AudioPlayer.mm in Sources */,
+				EBA65567130A682A002961E1 /* fft4g.c in Sources */,
+				EBA65568130A682A002961E1 /* OouraFFT.m in Sources */,
+				EBA65578130A685E002961E1 /* CAStreamBasicDescription.cpp in Sources */,
+				EBA6559A130A689E002961E1 /* AAFilter.cpp in Sources */,
+				EBA6559B130A689E002961E1 /* BPMDetect.cpp in Sources */,
+				EBA6559C130A689E002961E1 /* cpu_detect_x86_gcc.cpp in Sources */,
+				EBA6559D130A689E002961E1 /* FIFOSampleBuffer.cpp in Sources */,
+				EBA6559E130A689E002961E1 /* FIRFilter.cpp in Sources */,
+				EBA6559F130A689E002961E1 /* mmx_optimized.cpp in Sources */,
+				EBA655A0130A689E002961E1 /* PeakFinder.cpp in Sources */,
+				EBA655A1130A689E002961E1 /* RateTransposer.cpp in Sources */,
+				EBA655A2130A689E002961E1 /* SoundTouch.cpp in Sources */,
+				EBA655A3130A689E002961E1 /* sse_optimized.cpp in Sources */,
+				EBA655A4130A689E002961E1 /* TDStretch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +426,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RunTunes_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
 			};
@@ -278,6 +439,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RunTunes_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
 				VALIDATE_PRODUCT = YES;
