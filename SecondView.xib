@@ -51,7 +51,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">mix.png</string>
+							<string key="NSResourceName">RunTunesSmall.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="158990795">
@@ -541,7 +541,7 @@
 		<string key="IBDocument.LastKnownRelativeProjectPath">RunTunes.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">mix.png</string>
+			<string key="NS.key.0">RunTunesSmall.png</string>
 			<string key="NS.object.0">{57, 57}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>
