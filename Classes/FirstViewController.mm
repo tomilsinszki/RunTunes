@@ -52,7 +52,7 @@
 				autorelease];
 	}
 	
-	UIImage *image = [UIImage imageNamed:@"mix.png"];
+	UIImage *image = [UIImage imageNamed:@"RunTunesSmall.png"];
 	[[cell imageView] setImage:image];
 	
 	NSUInteger row = [indexPath row];
