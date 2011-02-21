@@ -25,6 +25,7 @@
 		EB1772C213088F430049F239 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BE13088F430049F239 /* Default@2x.png */; };
 		EB1772C313088F430049F239 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BF13088F430049F239 /* icon.png */; };
 		EB1772C413088F430049F239 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772C013088F430049F239 /* icon@2x.png */; };
+		EB22959E1312B4E800F971E1 /* Fable170bpm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB22959D1312B4E800F971E1 /* Fable170bpm.mp4 */; };
 		EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */; };
 		EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */; };
 		EB3F11AE1309E1F80030CC32 /* RunTunes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */; };
@@ -75,6 +76,8 @@
 		EB1772BE13088F430049F239 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Images/Default@2x.png"; sourceTree = "<group>"; };
 		EB1772BF13088F430049F239 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
 		EB1772C013088F430049F239 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
+		EB199CD3130B213500FE1D1B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		EB22959D1312B4E800F971E1 /* Fable170bpm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fable170bpm.mp4; path = Resources/Mixes/Fable/Fable170bpm.mp4; sourceTree = "<group>"; };
 		EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RunTunesSmall.png; path = Resources/Mixes/RunTunes/RunTunesSmall.png; sourceTree = "<group>"; };
 		EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RunTunesSmall@2x.png"; path = "Resources/Mixes/RunTunes/RunTunesSmall@2x.png"; sourceTree = "<group>"; };
 		EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = RunTunes.mp4; path = Resources/Mixes/RunTunes/RunTunes.mp4; sourceTree = "<group>"; };
@@ -197,6 +200,7 @@
 				EB17726013088B270049F239 /* ThirdView.xib */,
 				2819305F112F816700ECF9B4 /* RunTunes.xcdatamodeld */,
 				8D1107310486CEB800E47090 /* RunTunes-Info.plist */,
+				EB199CD3130B213500FE1D1B /* Entitlements.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -224,9 +228,18 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		EB22958F1312B37300F971E1 /* Fable */ = {
+			isa = PBXGroup;
+			children = (
+				EB22959D1312B4E800F971E1 /* Fable170bpm.mp4 */,
+			);
+			name = Fable;
+			sourceTree = "<group>";
+		};
 		EB3F11221309CD6C0030CC32 /* Mixes */ = {
 			isa = PBXGroup;
 			children = (
+				EB22958F1312B37300F971E1 /* Fable */,
 				EB3F11351309CED50030CC32 /* RunTunes */,
 			);
 			name = Mixes;
@@ -377,6 +390,7 @@
 				EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */,
 				EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */,
 				EB3F11AE1309E1F80030CC32 /* RunTunes.mp4 in Resources */,
+				EB22959E1312B4E800F971E1 /* Fable170bpm.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Development/iPhone/RunTunesApps/RunTunes/Entitlements.plist";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -436,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Development/iPhone/RunTunesApps/RunTunes/Entitlements.plist";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RunTunes_Prefix.pch;
@@ -475,6 +491,36 @@
 			};
 			name = Release;
 		};
+		EB199CD7130B216800FE1D1B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		EB199CD8130B216800FE1D1B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Development/iPhone/RunTunesApps/RunTunes/Entitlements.plist";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RunTunes_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "RunTunes-Info.plist";
+				PRODUCT_NAME = RunTunes;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +529,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				EB199CD8130B216800FE1D1B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -492,6 +539,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				EB199CD7130B216800FE1D1B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
