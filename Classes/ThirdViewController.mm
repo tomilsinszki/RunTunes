@@ -30,7 +30,7 @@
 																																										
 	audioPlayer = [[AudioPlayer alloc] init];                                                                                                                              
 	[audioPlayer setUpPlayback];                                                                                                                                           
-	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"Fable170bpm" ofType:@"mp4"];                                                                        
+	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"140bpm (range 135-150)" ofType:@"mp4"];                                                                        
 	[audioPlayer setAudioFilePath:audioFilePath];                                                                                                                          
 	[audioPlayer setUpAllBuffers];                                                                                                                                         
 	
@@ -55,7 +55,7 @@
 		double frequency  = [analyzer dominantFrequencyForRecentSamples:sampleSize];                                                                                   
 		double stepsPerMinute = frequency * 60.0;                                                                                                                      
 		
-		Float32 tempo = (Float32)stepsPerMinute / (Float32)170.0;                                                                                                
+		Float32 tempo = (Float32)stepsPerMinute / (Float32)140.0;                                                                                                
 		tempo = ( tempo < 0.5 ) ? 0.5 : tempo;                                                                                                                         
 		tempo = ( 2.0 < tempo ) ? 2.0 : tempo;                                                                                                                         
 		
