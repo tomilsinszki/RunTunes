@@ -25,10 +25,8 @@
 		EB1772C213088F430049F239 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BE13088F430049F239 /* Default@2x.png */; };
 		EB1772C313088F430049F239 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BF13088F430049F239 /* icon.png */; };
 		EB1772C413088F430049F239 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772C013088F430049F239 /* icon@2x.png */; };
-		EB22959E1312B4E800F971E1 /* Fable170bpm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB22959D1312B4E800F971E1 /* Fable170bpm.mp4 */; };
 		EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */; };
 		EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */; };
-		EB3F11AE1309E1F80030CC32 /* RunTunes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */; };
 		EBA6554F130A6762002961E1 /* AccelerationAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */; };
 		EBA65550130A6762002961E1 /* CyclicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554E130A6762002961E1 /* CyclicArray.m */; };
 		EBA65557130A6778002961E1 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBA65554130A6778002961E1 /* AudioFileReader.mm */; };
@@ -77,10 +75,8 @@
 		EB1772BF13088F430049F239 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
 		EB1772C013088F430049F239 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
 		EB199CD3130B213500FE1D1B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		EB22959D1312B4E800F971E1 /* Fable170bpm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fable170bpm.mp4; path = Resources/Mixes/Fable/Fable170bpm.mp4; sourceTree = "<group>"; };
 		EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RunTunesSmall.png; path = Resources/Mixes/RunTunes/RunTunesSmall.png; sourceTree = "<group>"; };
 		EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RunTunesSmall@2x.png"; path = "Resources/Mixes/RunTunes/RunTunesSmall@2x.png"; sourceTree = "<group>"; };
-		EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = RunTunes.mp4; path = Resources/Mixes/RunTunes/RunTunes.mp4; sourceTree = "<group>"; };
 		EBA6554B130A6762002961E1 /* AccelerationAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccelerationAnalyzer.h; path = AccelerationAnalyzer/AccelerationAnalyzer.h; sourceTree = "<group>"; };
 		EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccelerationAnalyzer.m; path = AccelerationAnalyzer/AccelerationAnalyzer.m; sourceTree = "<group>"; };
 		EBA6554D130A6762002961E1 /* CyclicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CyclicArray.h; path = AccelerationAnalyzer/CyclicArray.h; sourceTree = "<group>"; };
@@ -228,18 +224,9 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		EB22958F1312B37300F971E1 /* Fable */ = {
-			isa = PBXGroup;
-			children = (
-				EB22959D1312B4E800F971E1 /* Fable170bpm.mp4 */,
-			);
-			name = Fable;
-			sourceTree = "<group>";
-		};
 		EB3F11221309CD6C0030CC32 /* Mixes */ = {
 			isa = PBXGroup;
 			children = (
-				EB22958F1312B37300F971E1 /* Fable */,
 				EB3F11351309CED50030CC32 /* RunTunes */,
 			);
 			name = Mixes;
@@ -248,7 +235,6 @@
 		EB3F11351309CED50030CC32 /* RunTunes */ = {
 			isa = PBXGroup;
 			children = (
-				EB3F11AD1309E1F80030CC32 /* RunTunes.mp4 */,
 				EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */,
 				EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */,
 			);
@@ -389,8 +375,6 @@
 				EB1772C413088F430049F239 /* icon@2x.png in Resources */,
 				EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */,
 				EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */,
-				EB3F11AE1309E1F80030CC32 /* RunTunes.mp4 in Resources */,
-				EB22959E1312B4E800F971E1 /* Fable170bpm.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
