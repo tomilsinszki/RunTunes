@@ -20,14 +20,14 @@
 	sampleCount = 0;                                                                                                                                                       
 	
 	[[UIApplication sharedApplication] setIdleTimerDisabled:YES];                                                                                                          
-																																										
+                                                                                                                                                                    
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];                                                                                                
 	[accelerometer setDelegate:self];                                                                                                                                      
 	[accelerometer setUpdateInterval:0.01];                                                                                                                                
-																																										
+                                                                                                                                                                    
 	AccelerationAnalyzer *currentAnalyzer = [[AccelerationAnalyzer alloc] initWithNumberOfSamples:sampleSize];                                                             
 	[self setAnalyzer:currentAnalyzer];                                                                                                                                    
-																																										
+                                                                                                                                                                    
 	audioPlayer = [[AudioPlayer alloc] init];                                                                                                                              
 	[audioPlayer setUpPlayback];                                                                                                                                           
 	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"140bpm (range 135-150)" ofType:@"mp4"];                                                                        
