@@ -30,7 +30,7 @@
                                                                                                                                                                     
 	audioPlayer = [[AudioPlayer alloc] init];                                                                                                                              
 	[audioPlayer setUpPlayback];                                                                                                                                           
-	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"140bpm (range 135-150)" ofType:@"mp4"];                                                                        
+	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"140bpm" ofType:@"mp4"];                                                                        
 	[audioPlayer setAudioFilePath:audioFilePath];                                                                                                                          
 	[audioPlayer setUpAllBuffers];                                                                                                                                         
 	
