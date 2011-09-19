@@ -13,6 +13,24 @@
 
 @synthesize analyzer;
 
+// TODO: remove
+@synthesize testSongSwitcher;
+
+// TODO: remove
+- (IBAction)testSongSwitchedPressed:(id)sender {
+    NSString *alertText = [[NSString alloc] initWithFormat:@"Loading new song, just a moment..."];
+    
+    UIAlertView *alert = [[UIAlertView alloc] 
+                          initWithTitle:@"loading song" 
+                          message:alertText delegate:nil 
+                          cancelButtonTitle:@"Cancel" 
+                          otherButtonTitles:@"OK", 
+                          nil];
+    
+    [alert show];
+    [alert release];
+}
+
 - (void)viewDidLoad {                                                                                                                                                          
 	[[self navigationController] setNavigationBarHidden:YES];
 	
