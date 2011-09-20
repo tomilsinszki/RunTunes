@@ -17,6 +17,8 @@
 	NSUInteger sampleCount;
 	AccelerationAnalyzer *analyzer;
 	AudioPlayer *audioPlayer;
+    BOOL shouldPlaybackStart;
+    
     // TODO: remove
     IBOutlet UIButton *testSongSwitcher;
 }
@@ -24,7 +26,8 @@
 @property (nonatomic, retain) AccelerationAnalyzer *analyzer;
 // TODO: remove
 @property (nonatomic, retain) UIButton *testSongSwitcher;
-// TODO: remove
+
 -(IBAction)testSongSwitchedPressed:(id)sender;
+// TODO: remove end
 
 @end

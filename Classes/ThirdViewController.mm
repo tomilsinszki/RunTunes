@@ -13,29 +13,29 @@
 
 @synthesize analyzer;
 
-// TODO: remove
+// TODO: remove end
 @synthesize testSongSwitcher;
 
-// TODO: remove
 - (IBAction)testSongSwitchedPressed:(id)sender {
-    NSString *alertText = [[NSString alloc] initWithFormat:@"Loading new song, just a moment..."];
+    shouldPlaybackStart = FALSE;
+    [audioPlayer disposeAudioFileReader];
+    [audioPlayer release];
     
-    UIAlertView *alert = [[UIAlertView alloc] 
-                          initWithTitle:@"loading song" 
-                          message:alertText delegate:nil 
-                          cancelButtonTitle:@"Cancel" 
-                          otherButtonTitles:@"OK", 
-                          nil];
-    
-    [alert show];
-    [alert release];
+    audioPlayer = [[AudioPlayer alloc] init];
+	[audioPlayer setUpPlayback];
+	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"2min30sec" ofType:@"mp4"];
+	[audioPlayer setAudioFilePath:audioFilePath];
+	[audioPlayer setUpAllBuffers];
+    [audioPlayer startPlayback];
 }
+// TODO: remove end
 
-- (void)viewDidLoad {                                                                                                                                                          
+- (void)viewDidLoad {
 	[[self navigationController] setNavigationBarHidden:YES];
 	
-	sampleSize = 512;                                                                                                                                                      
-	sampleCount = 0;                                                                                                                                                       
+	sampleSize = 512;
+	sampleCount = 0;
+    shouldPlaybackStart = TRUE;
 	
 	[[UIApplication sharedApplication] setIdleTimerDisabled:YES];                                                                                                          
                                                                                                                                                                     
@@ -46,11 +46,11 @@
 	AccelerationAnalyzer *currentAnalyzer = [[AccelerationAnalyzer alloc] initWithNumberOfSamples:sampleSize];                                                             
 	[self setAnalyzer:currentAnalyzer];                                                                                                                                    
                                                                                                                                                                     
-	audioPlayer = [[AudioPlayer alloc] init];                                                                                                                              
-	[audioPlayer setUpPlayback];                                                                                                                                           
-	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"140bpm" ofType:@"mp4"];                                                                        
-	[audioPlayer setAudioFilePath:audioFilePath];                                                                                                                          
-	[audioPlayer setUpAllBuffers];                                                                                                                                         
+	audioPlayer = [[AudioPlayer alloc] init];
+	[audioPlayer setUpPlayback];
+	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"140bpm" ofType:@"mp4"];
+	[audioPlayer setAudioFilePath:audioFilePath];
+	[audioPlayer setUpAllBuffers];
 	
     [super viewDidLoad];                                                                                                                                                       
 }
@@ -77,7 +77,7 @@
 		tempo = ( tempo < 0.5 ) ? 0.5 : tempo;                                                                                                                         
 		tempo = ( 2.0 < tempo ) ? 2.0 : tempo;                                                                                                                         
 		
-		if ( [audioPlayer isRunning] == FALSE ) {                                                                                                                      
+		if ( [audioPlayer isRunning] == FALSE && shouldPlaybackStart == TRUE ) {     
 			[audioPlayer startPlayback];                                                                                                                           
 			[audioPlayer setTempoImmediately:tempo];                                                                                                               
 		}                                                                                                                                                              
