@@ -11,10 +11,10 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		28193060112F816700ECF9B4 /* RunTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* RunTunes.xcdatamodeld */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		EB122741142C7B7100239833 /* RunTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB12273F142C7B7100239833 /* RunTunes.xcdatamodeld */; };
 		EB17717F130866B30049F239 /* FirstViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB17717E130866B30049F239 /* FirstViewController.mm */; };
 		EB1771AE130869700049F239 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1771AD130869700049F239 /* FirstView.xib */; };
 		EB177209130873A60049F239 /* SecondViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB177208130873A60049F239 /* SecondViewController.mm */; };
@@ -25,8 +25,13 @@
 		EB1772C213088F430049F239 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BE13088F430049F239 /* Default@2x.png */; };
 		EB1772C313088F430049F239 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BF13088F430049F239 /* icon.png */; };
 		EB1772C413088F430049F239 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772C013088F430049F239 /* icon@2x.png */; };
+		EB2FE43A142BC78500801818 /* RunningMixes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EB2FE439142BC78500801818 /* RunningMixes.sqlite */; };
 		EB3F113A1309CEFB0030CC32 /* RunTunesSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */; };
 		EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */; };
+		EB65E44D14320EF7002D7C05 /* StarterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E44C14320EF7002D7C05 /* StarterViewController.mm */; };
+		EB65E45114320F99002D7C05 /* StarterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45014320F99002D7C05 /* StarterView.xib */; };
+		EB65E4541432192D002D7C05 /* RunningViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E4531432192C002D7C05 /* RunningViewController.mm */; };
+		EB65E45614321975002D7C05 /* RunningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45514321975002D7C05 /* RunningView.xib */; };
 		EB83E0DD13FD51ED001841A6 /* 140bpm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB83E0DC13FD51ED001841A6 /* 140bpm.mp4 */; };
 		EBA6554F130A6762002961E1 /* AccelerationAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */; };
 		EBA65550130A6762002961E1 /* CyclicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554E130A6762002961E1 /* CyclicArray.m */; };
@@ -58,11 +63,11 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28C3AD890F43EF2300507BA6 /* RunTunes.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = RunTunes.xcdatamodel; sourceTree = "<group>"; };
 		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* RunTunes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTunes_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* RunTunes-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RunTunes-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EB122740142C7B7100239833 /* RunningMixes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RunningMixes.xcdatamodel; sourceTree = "<group>"; };
 		EB17717D130866B30049F239 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		EB17717E130866B30049F239 /* FirstViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FirstViewController.mm; sourceTree = "<group>"; };
 		EB1771AD130869700049F239 /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
@@ -77,8 +82,15 @@
 		EB1772BF13088F430049F239 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
 		EB1772C013088F430049F239 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
 		EB199CD3130B213500FE1D1B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		EB2FE439142BC78500801818 /* RunningMixes.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RunningMixes.sqlite; sourceTree = "<group>"; };
 		EB3F11381309CEFB0030CC32 /* RunTunesSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RunTunesSmall.png; path = Resources/Mixes/RunTunes/RunTunesSmall.png; sourceTree = "<group>"; };
 		EB3F11391309CEFB0030CC32 /* RunTunesSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RunTunesSmall@2x.png"; path = "Resources/Mixes/RunTunes/RunTunesSmall@2x.png"; sourceTree = "<group>"; };
+		EB65E44B14320EF7002D7C05 /* StarterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarterViewController.h; sourceTree = "<group>"; };
+		EB65E44C14320EF7002D7C05 /* StarterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StarterViewController.mm; sourceTree = "<group>"; };
+		EB65E45014320F99002D7C05 /* StarterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarterView.xib; path = Resources/StarterView.xib; sourceTree = "<group>"; };
+		EB65E4521432192C002D7C05 /* RunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningViewController.h; sourceTree = "<group>"; };
+		EB65E4531432192C002D7C05 /* RunningViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RunningViewController.mm; sourceTree = "<group>"; };
+		EB65E45514321975002D7C05 /* RunningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RunningView.xib; path = Resources/RunningView.xib; sourceTree = "<group>"; };
 		EB83E0DC13FD51ED001841A6 /* 140bpm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 140bpm.mp4; path = Resources/Mixes/RunTunes/140bpm.mp4; sourceTree = "<group>"; };
 		EBA6554B130A6762002961E1 /* AccelerationAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccelerationAnalyzer.h; path = AccelerationAnalyzer/AccelerationAnalyzer.h; sourceTree = "<group>"; };
 		EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccelerationAnalyzer.m; path = AccelerationAnalyzer/AccelerationAnalyzer.m; sourceTree = "<group>"; };
@@ -153,6 +165,10 @@
 				EB177208130873A60049F239 /* SecondViewController.mm */,
 				EB17724B13088A530049F239 /* ThirdViewController.h */,
 				EB17724C13088A530049F239 /* ThirdViewController.mm */,
+				EB65E44B14320EF7002D7C05 /* StarterViewController.h */,
+				EB65E44C14320EF7002D7C05 /* StarterViewController.mm */,
+				EB65E4521432192C002D7C05 /* RunningViewController.h */,
+				EB65E4531432192C002D7C05 /* RunningViewController.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -198,7 +214,10 @@
 				EB1771AD130869700049F239 /* FirstView.xib */,
 				EB17720A130873E30049F239 /* SecondView.xib */,
 				EB17726013088B270049F239 /* ThirdView.xib */,
-				2819305F112F816700ECF9B4 /* RunTunes.xcdatamodeld */,
+				EB65E45014320F99002D7C05 /* StarterView.xib */,
+				EB65E45514321975002D7C05 /* RunningView.xib */,
+				EB12273F142C7B7100239833 /* RunTunes.xcdatamodeld */,
+				EB2FE439142BC78500801818 /* RunningMixes.sqlite */,
 				8D1107310486CEB800E47090 /* RunTunes-Info.plist */,
 				EB199CD3130B213500FE1D1B /* Entitlements.plist */,
 			);
@@ -383,6 +402,9 @@
 				EB3F113B1309CEFB0030CC32 /* RunTunesSmall@2x.png in Resources */,
 				EB83E0DD13FD51ED001841A6 /* 140bpm.mp4 in Resources */,
 				EBA91C98142789A000D67155 /* 2min30sec.mp4 in Resources */,
+				EB2FE43A142BC78500801818 /* RunningMixes.sqlite in Resources */,
+				EB65E45114320F99002D7C05 /* StarterView.xib in Resources */,
+				EB65E45614321975002D7C05 /* RunningView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +417,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* RunTunesAppDelegate.mm in Sources */,
-				28193060112F816700ECF9B4 /* RunTunes.xcdatamodeld in Sources */,
 				EB17717F130866B30049F239 /* FirstViewController.mm in Sources */,
 				EB177209130873A60049F239 /* SecondViewController.mm in Sources */,
 				EB17724D13088A530049F239 /* ThirdViewController.mm in Sources */,
@@ -417,6 +438,9 @@
 				EBA655A2130A689E002961E1 /* SoundTouch.cpp in Sources */,
 				EBA655A3130A689E002961E1 /* sse_optimized.cpp in Sources */,
 				EBA655A4130A689E002961E1 /* TDStretch.cpp in Sources */,
+				EB122741142C7B7100239833 /* RunTunes.xcdatamodeld in Sources */,
+				EB65E44D14320EF7002D7C05 /* StarterViewController.mm in Sources */,
+				EB65E4541432192D002D7C05 /* RunningViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,12 +563,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2819305F112F816700ECF9B4 /* RunTunes.xcdatamodeld */ = {
+		EB12273F142C7B7100239833 /* RunTunes.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				28C3AD890F43EF2300507BA6 /* RunTunes.xcdatamodel */,
+				EB122740142C7B7100239833 /* RunningMixes.xcdatamodel */,
 			);
-			currentVersion = 28C3AD890F43EF2300507BA6 /* RunTunes.xcdatamodel */;
+			currentVersion = EB122740142C7B7100239833 /* RunningMixes.xcdatamodel */;
 			path = RunTunes.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
