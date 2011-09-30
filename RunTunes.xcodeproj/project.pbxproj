@@ -23,6 +23,12 @@
 		EB17726113088B270049F239 /* ThirdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB17726013088B270049F239 /* ThirdView.xib */; };
 		EB1772C313088F430049F239 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BF13088F430049F239 /* icon.png */; };
 		EB1772C413088F430049F239 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772C013088F430049F239 /* icon@2x.png */; };
+		EB199A7D14361EBD00B5F5FA /* mainPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A7B14361EBD00B5F5FA /* mainPlayButton.png */; };
+		EB199A7E14361EBD00B5F5FA /* mainPlayButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A7C14361EBD00B5F5FA /* mainPlayButton@2x.png */; };
+		EB199A811436226600B5F5FA /* mainTracklistButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A7F1436226600B5F5FA /* mainTracklistButton.png */; };
+		EB199A821436226600B5F5FA /* mainTracklistButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A801436226600B5F5FA /* mainTracklistButton@2x.png */; };
+		EB199A85143622EA00B5F5FA /* mainChangemixButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A83143622EA00B5F5FA /* mainChangemixButton.png */; };
+		EB199A86143622EA00B5F5FA /* mainChangemixButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A84143622EA00B5F5FA /* mainChangemixButton@2x.png */; };
 		EB2FE43A142BC78500801818 /* RunningMixes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EB2FE439142BC78500801818 /* RunningMixes.sqlite */; };
 		EB337584143618F5003C5E93 /* mainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EB337582143618F5003C5E93 /* mainBackground.png */; };
 		EB337585143618F5003C5E93 /* mainBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB337583143618F5003C5E93 /* mainBackground@2x.png */; };
@@ -81,6 +87,12 @@
 		EB17726013088B270049F239 /* ThirdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdView.xib; sourceTree = "<group>"; };
 		EB1772BF13088F430049F239 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
 		EB1772C013088F430049F239 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
+		EB199A7B14361EBD00B5F5FA /* mainPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainPlayButton.png; path = Resources/Images/mainPlayButton.png; sourceTree = "<group>"; };
+		EB199A7C14361EBD00B5F5FA /* mainPlayButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainPlayButton@2x.png"; path = "Resources/Images/mainPlayButton@2x.png"; sourceTree = "<group>"; };
+		EB199A7F1436226600B5F5FA /* mainTracklistButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainTracklistButton.png; path = Resources/Images/mainTracklistButton.png; sourceTree = "<group>"; };
+		EB199A801436226600B5F5FA /* mainTracklistButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainTracklistButton@2x.png"; path = "Resources/Images/mainTracklistButton@2x.png"; sourceTree = "<group>"; };
+		EB199A83143622EA00B5F5FA /* mainChangemixButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainChangemixButton.png; path = Resources/Images/mainChangemixButton.png; sourceTree = "<group>"; };
+		EB199A84143622EA00B5F5FA /* mainChangemixButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainChangemixButton@2x.png"; path = "Resources/Images/mainChangemixButton@2x.png"; sourceTree = "<group>"; };
 		EB199CD3130B213500FE1D1B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		EB2FE439142BC78500801818 /* RunningMixes.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RunningMixes.sqlite; sourceTree = "<group>"; };
 		EB337582143618F5003C5E93 /* mainBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBackground.png; path = Resources/Images/mainBackground.png; sourceTree = "<group>"; };
@@ -243,6 +255,12 @@
 		EB1771EF1308725B0049F239 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EB199A83143622EA00B5F5FA /* mainChangemixButton.png */,
+				EB199A84143622EA00B5F5FA /* mainChangemixButton@2x.png */,
+				EB199A7F1436226600B5F5FA /* mainTracklistButton.png */,
+				EB199A801436226600B5F5FA /* mainTracklistButton@2x.png */,
+				EB199A7B14361EBD00B5F5FA /* mainPlayButton.png */,
+				EB199A7C14361EBD00B5F5FA /* mainPlayButton@2x.png */,
 				EB337582143618F5003C5E93 /* mainBackground.png */,
 				EB337583143618F5003C5E93 /* mainBackground@2x.png */,
 				EB33B4EE143617D30063F6AB /* Default.png */,
@@ -413,6 +431,12 @@
 				EB33B4F1143617D30063F6AB /* Default@2x.png in Resources */,
 				EB337584143618F5003C5E93 /* mainBackground.png in Resources */,
 				EB337585143618F5003C5E93 /* mainBackground@2x.png in Resources */,
+				EB199A7D14361EBD00B5F5FA /* mainPlayButton.png in Resources */,
+				EB199A7E14361EBD00B5F5FA /* mainPlayButton@2x.png in Resources */,
+				EB199A811436226600B5F5FA /* mainTracklistButton.png in Resources */,
+				EB199A821436226600B5F5FA /* mainTracklistButton@2x.png in Resources */,
+				EB199A85143622EA00B5F5FA /* mainChangemixButton.png in Resources */,
+				EB199A86143622EA00B5F5FA /* mainChangemixButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

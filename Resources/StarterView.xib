@@ -45,9 +45,10 @@
 					<object class="IBUIButton" id="829800874">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{230, 233}, {70, 70}}</string>
+						<string key="NSFrame">{{195, 334}, {71, 59}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -71,15 +72,16 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">icon.png</string>
+							<string key="NSResourceName">mainChangemixButton.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="519169315">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 233}, {70, 70}}</string>
+						<string key="NSFrame">{{54, 334}, {71, 59}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="829800874"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -90,43 +92,46 @@
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleShadowColor" id="295361254">
+						<object class="NSColor" key="IBUINormalTitleShadowColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">RunTunesSmall@2x.png</string>
+							<string key="NSResourceName">mainTracklistButton.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="404469748">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{84, 52}, {153, 153}}</string>
+						<string key="NSFrame">{{84, 8}, {153, 153}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="519169315"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="612355173"/>
-						<int key="IBUIButtonType">1</int>
 						<reference key="IBUIHighlightedTitleColor" ref="799140736"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="295361254"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
+						<object class="NSColor" key="IBUINormalTitleShadowColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MSAxIDEAA</bytes>
+						</object>
+						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Default@2x.png</string>
+							<string key="NSResourceName">mainPlayButton.png</string>
 						</object>
 					</object>
 				</object>
 				<string key="NSFrame">{{0, 64}, {320, 416}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
+				<reference key="NSNextKeyView" ref="404469748"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -185,9 +190,9 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="519169315"/>
-							<reference ref="829800874"/>
 							<reference ref="404469748"/>
+							<reference ref="829800874"/>
+							<reference ref="519169315"/>
 						</object>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">View</string>
@@ -333,15 +338,15 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>Default@2x.png</string>
-				<string>RunTunesSmall@2x.png</string>
-				<string>icon.png</string>
+				<string>mainChangemixButton.png</string>
+				<string>mainPlayButton.png</string>
+				<string>mainTracklistButton.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{640, 960}</string>
-				<string>{114, 114}</string>
-				<string>{57, 57}</string>
+				<string>{71, 59}</string>
+				<string>{97, 96}</string>
+				<string>{71, 59}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>
