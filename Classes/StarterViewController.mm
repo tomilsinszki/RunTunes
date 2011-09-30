@@ -63,6 +63,13 @@
 
 - (void)viewDidLoad {
     [self setTitle:@"Running Mixes"];
+    
+    UIColor *backgroundImage = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"mainBackground.png"]];
+    [[self view] setBackgroundColor:backgroundImage];
+    [backgroundImage release];
+    
+    [[self navigationController] setNavigationBarHidden:YES];
+    
     [super viewDidLoad];
 }
 
