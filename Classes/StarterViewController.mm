@@ -8,10 +8,12 @@
 
 #import "StarterViewController.h"
 #import "RunningViewController.h"
+#import "TracklistViewController.h"
 
 @implementation StarterViewController
 
 @synthesize runningViewController;
+@synthesize tracklistViewController;
 
 - (IBAction)changeRunnningMixButtonPressed:(id)sender {
     UIAlertView *noOtherMixesNotice = [[UIAlertView alloc] 
@@ -35,6 +37,18 @@
 	}
     
     [[self navigationController] pushViewController:runningViewController animated:YES];
+}
+
+- (IBAction)tracklistButtonPressed:(id)sender {
+    if ( tracklistViewController == nil ) {
+		TracklistViewController *tracklistController = [[TracklistViewController alloc]
+                                                        initWithNibName:@"TracklistView"
+                                                        bundle:nil];
+        [self setTracklistViewController:tracklistController];
+        [tracklistController release];
+	}
+    
+    [[self navigationController] pushViewController:tracklistViewController animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
