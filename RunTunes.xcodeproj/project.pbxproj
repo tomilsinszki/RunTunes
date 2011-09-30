@@ -40,6 +40,8 @@
 		EB65E45114320F99002D7C05 /* StarterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45014320F99002D7C05 /* StarterView.xib */; };
 		EB65E4541432192D002D7C05 /* RunningViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E4531432192C002D7C05 /* RunningViewController.mm */; };
 		EB65E45614321975002D7C05 /* RunningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45514321975002D7C05 /* RunningView.xib */; };
+		EB7343A7143625BF0023227B /* runningBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7343A5143625BF0023227B /* runningBackground.png */; };
+		EB7343A8143625BF0023227B /* runningBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7343A6143625BF0023227B /* runningBackground@2x.png */; };
 		EB83E0DD13FD51ED001841A6 /* 140bpm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB83E0DC13FD51ED001841A6 /* 140bpm.mp4 */; };
 		EBA6554F130A6762002961E1 /* AccelerationAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */; };
 		EBA65550130A6762002961E1 /* CyclicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554E130A6762002961E1 /* CyclicArray.m */; };
@@ -107,6 +109,8 @@
 		EB65E4521432192C002D7C05 /* RunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningViewController.h; sourceTree = "<group>"; };
 		EB65E4531432192C002D7C05 /* RunningViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RunningViewController.mm; sourceTree = "<group>"; };
 		EB65E45514321975002D7C05 /* RunningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RunningView.xib; path = Resources/RunningView.xib; sourceTree = "<group>"; };
+		EB7343A5143625BF0023227B /* runningBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = runningBackground.png; path = Resources/Images/runningBackground.png; sourceTree = "<group>"; };
+		EB7343A6143625BF0023227B /* runningBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "runningBackground@2x.png"; path = "Resources/Images/runningBackground@2x.png"; sourceTree = "<group>"; };
 		EB83E0DC13FD51ED001841A6 /* 140bpm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 140bpm.mp4; path = Resources/Mixes/RunTunes/140bpm.mp4; sourceTree = "<group>"; };
 		EBA6554B130A6762002961E1 /* AccelerationAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccelerationAnalyzer.h; path = AccelerationAnalyzer/AccelerationAnalyzer.h; sourceTree = "<group>"; };
 		EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccelerationAnalyzer.m; path = AccelerationAnalyzer/AccelerationAnalyzer.m; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 		EB1771EF1308725B0049F239 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EB7343A5143625BF0023227B /* runningBackground.png */,
+				EB7343A6143625BF0023227B /* runningBackground@2x.png */,
 				EB199A83143622EA00B5F5FA /* mainChangemixButton.png */,
 				EB199A84143622EA00B5F5FA /* mainChangemixButton@2x.png */,
 				EB199A7F1436226600B5F5FA /* mainTracklistButton.png */,
@@ -437,6 +443,8 @@
 				EB199A821436226600B5F5FA /* mainTracklistButton@2x.png in Resources */,
 				EB199A85143622EA00B5F5FA /* mainChangemixButton.png in Resources */,
 				EB199A86143622EA00B5F5FA /* mainChangemixButton@2x.png in Resources */,
+				EB7343A7143625BF0023227B /* runningBackground.png in Resources */,
+				EB7343A8143625BF0023227B /* runningBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
