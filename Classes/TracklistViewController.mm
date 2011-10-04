@@ -11,6 +11,8 @@
 
 @implementation TracklistViewController
 
+@synthesize listData;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -42,17 +44,19 @@
 }
 */
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    NSArray *array = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", @"Bashful", @"Happy", @"Doc", @"Grumpy", @"Dopey", @"Thorin", @"Dorin", @"Nori", @"Ori", @"Balin", @"Dwalin", @"Fili", @"Kili", @"Oin", @"Gloin", @"Bifur", @"Bombur", nil];
+    [self setListData:array];
+    [array release];
+    
     [super viewDidLoad];
 }
-*/
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    [listData release];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -61,6 +65,26 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark -
+#pragma mark Table View Data Source Methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[self listData] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *TracklistTableIdentifier = @"TracklistTableIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TracklistTableIdentifier];
+    
+    if ( cell == nil ) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TracklistTableIdentifier] autorelease];
+    }
+    
+    NSUInteger row = [indexPath row];
+    [[cell textLabel] setText:[listData objectAtIndex:row]];
+    return cell;
 }
 
 @end

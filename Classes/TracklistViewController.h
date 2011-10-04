@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface TracklistViewController : UIViewController {
-    
+@interface TracklistViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *listData;
 }
+
+@property (nonatomic, retain) NSArray *listData;
 
 @end
