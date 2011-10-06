@@ -117,11 +117,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TracklistTableIdentifier];
     
     if ( cell == nil ) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TracklistTableIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:TracklistTableIdentifier] autorelease];
     }
     
     NSUInteger row = [indexPath row];
-    [[cell textLabel] setText:[[tracksInSelectedPackage objectAtIndex:row] valueForKey:@"title"]];
+    NSManagedObject *track = [tracksInSelectedPackage objectAtIndex:row];
+    [[cell textLabel] setText:[track valueForKey:@"title"]];
+    [[cell detailTextLabel] setText:[track valueForKey:@"artistName"]];
     
     [tracksInSelectedPackage release];
     
