@@ -46,43 +46,8 @@
 }
 */
 
-- (void)viewDidLoad
-{
-    NSArray *array = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", @"Bashful", @"Happy", @"Doc", @"Grumpy", @"Dopey", @"Thorin", @"Dorin", @"Nori", @"Ori", @"Balin", @"Dwalin", @"Fili", @"Kili", @"Oin", @"Gloin", @"Bifur", @"Bombur", nil];
-    [self setListData:array];
-    [array release];
-    
+- (void)viewDidLoad {
     managedObjectContext = [(RunTunesAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
-    
-    /*
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *userSettingsDescription = [NSEntityDescription entityForName:@"UserSettings"
-                                                                  inManagedObjectContext:managedObjectContext];
-    
-    [request setEntity:userSettingsDescription];
-    NSArray *userSettingsResults = [managedObjectContext executeFetchRequest:request 
-                                                                          error:nil];
-    
-    NSManagedObject *userSettings = [userSettingsResults objectAtIndex:0];
-    NSManagedObject *selectedPackage = [userSettings valueForKey:@"selectedPackage"];
-    
-    NSLog(@"Selected package: %@", [selectedPackage valueForKey:@"displayName"]);
-    
-    NSArray *mixes = [selectedPackage valueForKey:@"mixOfPackage"];
-    NSEnumerator *mixEnumerator = [mixes objectEnumerator];
-    NSManagedObject *mix;
-    while (( mix = [mixEnumerator nextObject] )) {
-        NSLog(@"Mix name: %@", [mix valueForKey:@"displayName"]);
-        
-        NSArray *tracks = [mix valueForKey:@"trackOfMix"];
-        NSEnumerator *trackEnumerator = [tracks objectEnumerator];
-        NSManagedObject *track;
-        while (( track = [trackEnumerator nextObject] )) {
-            NSLog(@"Track: %@", [track valueForKey:@"title"]);
-        }
-    }
-    */
-    
     [super viewDidLoad];
 }
 
