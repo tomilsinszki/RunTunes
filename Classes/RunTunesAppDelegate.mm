@@ -17,10 +17,6 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, TRUE);
-    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
-    NSLog(@"%@", documentsDirectoryPath);
-    
     [self.window addSubview:[navigationController view]];
     [self.window makeKeyAndVisible];
     
@@ -95,9 +91,6 @@
     }
     
     NSString *storePath = [[NSBundle mainBundle] pathForResource:@"RunningMixes" ofType:@"sqlite"];
-    
-    NSLog(@"store path: %@", storePath);
-    
     NSURL *storeURL = [NSURL fileURLWithPath:storePath];
     
     NSError *error = nil;
