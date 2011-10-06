@@ -76,19 +76,29 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
-    [self setTitle:@"Running Mixes"];
+    [self setTitle:@"RunTunes"];
     
     UIColor *backgroundImage = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"mainBackground.png"]];
     [[self view] setBackgroundColor:backgroundImage];
     [backgroundImage release];
-    
-    [[self navigationController] setNavigationBarHidden:YES];
     
     [super viewDidLoad];
 }
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [super viewWillDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
