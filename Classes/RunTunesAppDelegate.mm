@@ -21,20 +21,6 @@
     NSString *documentsDirectoryPath = [paths objectAtIndex:0];
     NSLog(@"%@", documentsDirectoryPath);
     
-    NSManagedObjectContext *context = [self managedObjectContext];
-    
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *packageEntity = [NSEntityDescription entityForName:@"Package"
-                                               inManagedObjectContext:context];
-    [request setEntity:packageEntity];
-    NSArray *results = [context executeFetchRequest:request error:nil];
-    
-    NSEnumerator *enumerator = [results objectEnumerator];
-    NSManagedObject *object;
-    while (( object = [enumerator nextObject] )) {
-        NSLog(@"Package name: %@", [object valueForKey:@"displayName"]);
-    }
-    
     [self.window addSubview:[navigationController view]];
     [self.window makeKeyAndVisible];
     

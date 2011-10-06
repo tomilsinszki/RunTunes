@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 
 @interface TracklistViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSManagedObjectContext *managedObjectContext;
     NSArray *listData;
 }
 
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSArray *listData;
 
 @end

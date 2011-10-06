@@ -7,11 +7,13 @@
 //
 
 #import "TracklistViewController.h"
+#import "RunTunesAppDelegate.h"
 
 
 @implementation TracklistViewController
 
 @synthesize listData;
+@synthesize managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -49,6 +51,20 @@
     NSArray *array = [[NSArray alloc] initWithObjects:@"Sleepy", @"Sneezy", @"Bashful", @"Happy", @"Doc", @"Grumpy", @"Dopey", @"Thorin", @"Dorin", @"Nori", @"Ori", @"Balin", @"Dwalin", @"Fili", @"Kili", @"Oin", @"Gloin", @"Bifur", @"Bombur", nil];
     [self setListData:array];
     [array release];
+    
+    managedObjectContext = [(RunTunesAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *packageEntity = [NSEntityDescription entityForName:@"Package"
+                                                     inManagedObjectContext:managedObjectContext];
+    [request setEntity:packageEntity];
+    NSArray *results = [managedObjectContext executeFetchRequest:request error:nil];
+    
+    NSEnumerator *enumerator = [results objectEnumerator];
+    NSManagedObject *object;
+    while (( object = [enumerator nextObject] )) {
+        NSLog(@"Package name: %@", [object valueForKey:@"displayName"]);
+    }
     
     [super viewDidLoad];
 }
