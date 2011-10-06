@@ -52,32 +52,34 @@
     [self setListData:array];
     [array release];
     
-    
-    
-    /*
     managedObjectContext = [(RunTunesAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *selectedPackageDescription = [NSEntityDescription entityForName:@"SelectedPackage"
+    NSEntityDescription *userSettingsDescription = [NSEntityDescription entityForName:@"UserSettings"
                                                                   inManagedObjectContext:managedObjectContext];
     
-    [request setEntity:selectedPackageDescription];
-    */
+    [request setEntity:userSettingsDescription];
+    NSArray *userSettingsResults = [managedObjectContext executeFetchRequest:request 
+                                                                          error:nil];
     
+    NSManagedObject *userSettings = [userSettingsResults objectAtIndex:0];
+    NSManagedObject *selectedPackage = [userSettings valueForKey:@"selectedPackage"];
     
-    /*
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *packageEntity = [NSEntityDescription entityForName:@"Package"
-                                                     inManagedObjectContext:managedObjectContext];
-    [request setEntity:packageEntity];
-    NSArray *results = [managedObjectContext executeFetchRequest:request error:nil];
+    NSLog(@"Selected package: %@", [selectedPackage valueForKey:@"displayName"]);
     
-    NSEnumerator *enumerator = [results objectEnumerator];
-    NSManagedObject *object;
-    while (( object = [enumerator nextObject] )) {
-        NSLog(@"Package name: %@", [object valueForKey:@"displayName"]);
+    NSArray *mixes = [selectedPackage valueForKey:@"mixOfPackage"];
+    NSEnumerator *mixEnumerator = [mixes objectEnumerator];
+    NSManagedObject *mix;
+    while (( mix = [mixEnumerator nextObject] )) {
+        NSLog(@"Mix name: %@", [mix valueForKey:@"displayName"]);
+        
+        NSArray *tracks = [mix valueForKey:@"trackOfMix"];
+        NSEnumerator *trackEnumerator = [tracks objectEnumerator];
+        NSManagedObject *track;
+        while (( track = [trackEnumerator nextObject] )) {
+            NSLog(@"Track: %@", [track valueForKey:@"title"]);
+        }
     }
-    */
     
     [super viewDidLoad];
 }
