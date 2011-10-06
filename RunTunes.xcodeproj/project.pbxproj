@@ -60,7 +60,6 @@
 		EBA655A3130A689E002961E1 /* sse_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65596130A689E002961E1 /* sse_optimized.cpp */; };
 		EBA655A4130A689E002961E1 /* TDStretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBA65598130A689E002961E1 /* TDStretch.cpp */; };
 		EBA655BF130A694C002961E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA655BE130A694C002961E1 /* AudioToolbox.framework */; };
-		EBA91C98142789A000D67155 /* 2min30sec.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EBA91C97142789A000D67155 /* 2min30sec.mp4 */; };
 		EBF40C2F14362B6F00377AD1 /* TracklistViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBF40C2E14362B6F00377AD1 /* TracklistViewController.mm */; };
 		EBF40C3314362BCA00377AD1 /* TracklistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF40C3214362BCA00377AD1 /* TracklistView.xib */; };
 /* End PBXBuildFile section */
@@ -151,7 +150,6 @@
 		EBA65598130A689E002961E1 /* TDStretch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TDStretch.cpp; path = OtherSources/SoundTouch/TDStretch.cpp; sourceTree = "<group>"; };
 		EBA65599130A689E002961E1 /* TDStretch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDStretch.h; path = OtherSources/SoundTouch/TDStretch.h; sourceTree = "<group>"; };
 		EBA655BE130A694C002961E1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		EBA91C97142789A000D67155 /* 2min30sec.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2min30sec.mp4; path = Resources/Mixes/RunTunes/2min30sec.mp4; sourceTree = "<group>"; };
 		EBF40C2D14362B6F00377AD1 /* TracklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracklistViewController.h; sourceTree = "<group>"; };
 		EBF40C2E14362B6F00377AD1 /* TracklistViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TracklistViewController.mm; sourceTree = "<group>"; };
 		EBF40C3214362BCA00377AD1 /* TracklistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TracklistView.xib; path = Resources/TracklistView.xib; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 		EB3F11351309CED50030CC32 /* RunTunes */ = {
 			isa = PBXGroup;
 			children = (
-				EBA91C97142789A000D67155 /* 2min30sec.mp4 */,
 				EB83E0DC13FD51ED001841A6 /* 140bpm.mp4 */,
 			);
 			name = RunTunes;
@@ -429,7 +426,6 @@
 				EB1772C313088F430049F239 /* icon.png in Resources */,
 				EB1772C413088F430049F239 /* icon@2x.png in Resources */,
 				EB83E0DD13FD51ED001841A6 /* 140bpm.mp4 in Resources */,
-				EBA91C98142789A000D67155 /* 2min30sec.mp4 in Resources */,
 				EB2FE43A142BC78500801818 /* RunningMixes.sqlite in Resources */,
 				EB65E45114320F99002D7C05 /* StarterView.xib in Resources */,
 				EB65E45614321975002D7C05 /* RunningView.xib in Resources */,
