@@ -52,8 +52,20 @@
     [self setListData:array];
     [array release];
     
+    
+    
+    /*
     managedObjectContext = [(RunTunesAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *selectedPackageDescription = [NSEntityDescription entityForName:@"SelectedPackage"
+                                                                  inManagedObjectContext:managedObjectContext];
+    
+    [request setEntity:selectedPackageDescription];
+    */
+    
+    
+    /*
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *packageEntity = [NSEntityDescription entityForName:@"Package"
                                                      inManagedObjectContext:managedObjectContext];
@@ -65,6 +77,7 @@
     while (( object = [enumerator nextObject] )) {
         NSLog(@"Package name: %@", [object valueForKey:@"displayName"]);
     }
+    */
     
     [super viewDidLoad];
 }
