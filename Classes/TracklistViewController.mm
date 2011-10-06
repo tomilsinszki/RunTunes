@@ -54,6 +54,7 @@
     
     managedObjectContext = [(RunTunesAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     
+    /*
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *userSettingsDescription = [NSEntityDescription entityForName:@"UserSettings"
                                                                   inManagedObjectContext:managedObjectContext];
@@ -80,6 +81,7 @@
             NSLog(@"Track: %@", [track valueForKey:@"title"]);
         }
     }
+    */
     
     [super viewDidLoad];
 }
@@ -101,10 +103,52 @@
 #pragma mark -
 #pragma mark Table View Data Source Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[self listData] count];
+    NSInteger numberOfTracks = 0;
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *userSettingsDescription = [NSEntityDescription entityForName:@"UserSettings"
+                                                               inManagedObjectContext:managedObjectContext];
+    
+    [request setEntity:userSettingsDescription];
+    NSArray *userSettingsResults = [managedObjectContext executeFetchRequest:request 
+                                                                       error:nil];
+    
+    NSManagedObject *userSettings = [userSettingsResults objectAtIndex:0];
+    NSManagedObject *selectedPackage = [userSettings valueForKey:@"selectedPackage"];
+    
+    NSArray *mixes = [selectedPackage valueForKey:@"mixOfPackage"];
+    NSEnumerator *mixEnumerator = [mixes objectEnumerator];
+    NSManagedObject *mix;
+    while (( mix = [mixEnumerator nextObject] )) {      
+        NSArray *tracks = [mix valueForKey:@"trackOfMix"];
+        numberOfTracks += [tracks count];
+    }
+    
+    return numberOfTracks;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSMutableArray *tracksInSelectedPackage = [[NSMutableArray alloc] init];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *userSettingsDescription = [NSEntityDescription entityForName:@"UserSettings"
+                                                               inManagedObjectContext:managedObjectContext];
+    
+    [request setEntity:userSettingsDescription];
+    NSArray *userSettingsResults = [managedObjectContext executeFetchRequest:request 
+                                                                       error:nil];
+    
+    NSManagedObject *userSettings = [userSettingsResults objectAtIndex:0];
+    NSManagedObject *selectedPackage = [userSettings valueForKey:@"selectedPackage"];
+    
+    NSArray *mixes = [selectedPackage valueForKey:@"mixOfPackage"];
+    NSEnumerator *mixEnumerator = [mixes objectEnumerator];
+    NSManagedObject *mix;
+    while (( mix = [mixEnumerator nextObject] )) {
+        NSArray *tracks = [mix valueForKey:@"trackOfMix"];
+        [tracksInSelectedPackage addObjectsFromArray:tracks];
+    }
+    
     static NSString *TracklistTableIdentifier = @"TracklistTableIdentifier";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TracklistTableIdentifier];
@@ -114,7 +158,10 @@
     }
     
     NSUInteger row = [indexPath row];
-    [[cell textLabel] setText:[listData objectAtIndex:row]];
+    [[cell textLabel] setText:[[tracksInSelectedPackage objectAtIndex:row] valueForKey:@"title"]];
+    
+    [tracksInSelectedPackage release];
+    
     return cell;
 }
 
