@@ -5988,10 +5988,10 @@
     s = 0;
 }</string>
 		</dict>
-		<real>339588272.24188203</real>
-		<string>{551, 1598}</string>
-		<string>{593, 0}</string>
-		<string>@implementation TracklistViewController</string>
+		<real>339588330.64442903</real>
+		<string>{570, 1615}</string>
+		<string>{961, 0}</string>
+		<string>-viewDidLoad</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -14248,9 +14248,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339588272.23935801</real>
-		<string>{551, 1598}</string>
-		<string>{593, 0}</string>
+		<real>339588330.64164001</real>
+		<string>{570, 1615}</string>
+		<string>{961, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
