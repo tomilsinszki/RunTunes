@@ -74,7 +74,6 @@
 }
 
 #pragma mark - View lifecycle
-
 - (void)viewDidLoad {
     [self setTitle:@"RunTunes"];
     
