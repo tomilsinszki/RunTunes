@@ -109,7 +109,11 @@
     NSManagedObject *mix;
     while (( mix = [mixEnumerator nextObject] )) {
         NSArray *tracks = [mix valueForKey:@"trackOfMix"];
-        [tracksInSelectedPackage addObjectsFromArray:tracks];
+        NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"artistName" 
+                                                                         ascending:TRUE 
+                                                                          selector:@selector(localizedCompare:)];
+        NSArray *orderedTracks = [tracks sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        [tracksInSelectedPackage addObjectsFromArray:orderedTracks];
     }
     
     static NSString *TracklistTableIdentifier = @"TracklistTableIdentifier";
