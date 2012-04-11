@@ -17,7 +17,6 @@
 		EB08062A14474205004839A3 /* 135bpm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EB08062914474205004839A3 /* 135bpm.mp4 */; };
 		EB122741142C7B7100239833 /* RunTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB12273F142C7B7100239833 /* RunTunes.xcdatamodeld */; };
 		EB1772C313088F430049F239 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772BF13088F430049F239 /* icon.png */; };
-		EB1772C413088F430049F239 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1772C013088F430049F239 /* icon@2x.png */; };
 		EB199A7D14361EBD00B5F5FA /* mainPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A7B14361EBD00B5F5FA /* mainPlayButton.png */; };
 		EB199A7E14361EBD00B5F5FA /* mainPlayButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A7C14361EBD00B5F5FA /* mainPlayButton@2x.png */; };
 		EB199A811436226600B5F5FA /* mainTracklistButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EB199A7F1436226600B5F5FA /* mainTracklistButton.png */; };
@@ -29,6 +28,7 @@
 		EB337585143618F5003C5E93 /* mainBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB337583143618F5003C5E93 /* mainBackground@2x.png */; };
 		EB33B4F0143617D30063F6AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB33B4EE143617D30063F6AB /* Default.png */; };
 		EB33B4F1143617D30063F6AB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB33B4EF143617D30063F6AB /* Default@2x.png */; };
+		EB5184D31523606B00F43478 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5184D21523606B00F43478 /* icon@2x.png */; };
 		EB65E44D14320EF7002D7C05 /* StarterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E44C14320EF7002D7C05 /* StarterViewController.mm */; };
 		EB65E45114320F99002D7C05 /* StarterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45014320F99002D7C05 /* StarterView.xib */; };
 		EB65E4541432192D002D7C05 /* RunningViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E4531432192C002D7C05 /* RunningViewController.mm */; };
@@ -73,7 +73,6 @@
 		EB08062914474205004839A3 /* 135bpm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 135bpm.mp4; path = Resources/Mixes/RunTunes/135bpm.mp4; sourceTree = "<group>"; };
 		EB122740142C7B7100239833 /* RunningMixes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RunningMixes.xcdatamodel; sourceTree = "<group>"; };
 		EB1772BF13088F430049F239 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
-		EB1772C013088F430049F239 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
 		EB199A7B14361EBD00B5F5FA /* mainPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainPlayButton.png; path = Resources/Images/mainPlayButton.png; sourceTree = "<group>"; };
 		EB199A7C14361EBD00B5F5FA /* mainPlayButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainPlayButton@2x.png"; path = "Resources/Images/mainPlayButton@2x.png"; sourceTree = "<group>"; };
 		EB199A7F1436226600B5F5FA /* mainTracklistButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainTracklistButton.png; path = Resources/Images/mainTracklistButton.png; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		EB337583143618F5003C5E93 /* mainBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainBackground@2x.png"; path = "Resources/Images/mainBackground@2x.png"; sourceTree = "<group>"; };
 		EB33B4EE143617D30063F6AB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Images/Default.png; sourceTree = "<group>"; };
 		EB33B4EF143617D30063F6AB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Images/Default@2x.png"; sourceTree = "<group>"; };
+		EB5184D21523606B00F43478 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		EB65E44B14320EF7002D7C05 /* StarterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarterViewController.h; sourceTree = "<group>"; };
 		EB65E44C14320EF7002D7C05 /* StarterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StarterViewController.mm; sourceTree = "<group>"; };
 		EB65E45014320F99002D7C05 /* StarterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarterView.xib; path = Resources/StarterView.xib; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 				EB33B4EE143617D30063F6AB /* Default.png */,
 				EB33B4EF143617D30063F6AB /* Default@2x.png */,
 				EB1772BF13088F430049F239 /* icon.png */,
-				EB1772C013088F430049F239 /* icon@2x.png */,
+				EB5184D21523606B00F43478 /* icon@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -395,7 +395,6 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				EB1772C313088F430049F239 /* icon.png in Resources */,
-				EB1772C413088F430049F239 /* icon@2x.png in Resources */,
 				EB2FE43A142BC78500801818 /* RunningMixes.sqlite in Resources */,
 				EB65E45114320F99002D7C05 /* StarterView.xib in Resources */,
 				EB65E45614321975002D7C05 /* RunningView.xib in Resources */,
@@ -413,6 +412,7 @@
 				EB7343A8143625BF0023227B /* runningBackground@2x.png in Resources */,
 				EBF40C3314362BCA00377AD1 /* TracklistView.xib in Resources */,
 				EB08062A14474205004839A3 /* 135bpm.mp4 in Resources */,
+				EB5184D31523606B00F43478 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +462,7 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -470,6 +471,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
 			};
 			name = Debug;
 		};
@@ -482,14 +484,14 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				CODE_SIGN_ENTITLEMENTS = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RunTunes_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -498,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
@@ -505,6 +508,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -513,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
@@ -521,6 +526,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -529,7 +535,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Typogravity Kft";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -537,6 +544,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "D0D48C72-E7FC-4C0D-9898-328652B144A6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = "Ad Hoc Distribution";
@@ -550,14 +559,14 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				CODE_SIGN_ENTITLEMENTS = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Typogravity Kft";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RunTunes_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D0D48C72-E7FC-4C0D-9898-328652B144A6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad Hoc Distribution";
