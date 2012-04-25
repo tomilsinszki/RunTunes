@@ -39,7 +39,7 @@
     [[self navigationController] pushViewController:runningViewController animated:YES];
 }
 
-- (IBAction)tracklistButtonPressed:(id)sender {
+- (IBAction)tracklistButtonPressed:(id)sender {    
     if ( tracklistViewController == nil ) {
 		TracklistViewController *tracklistController = [[TracklistViewController alloc]
                                                         initWithNibName:@"TracklistView"
@@ -80,6 +80,12 @@
     UIColor *backgroundImage = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"mainBackground.png"]];
     [[self view] setBackgroundColor:backgroundImage];
     [backgroundImage release];
+    
+    NSError *activationError = nil;
+    [[AVAudioSession sharedInstance] setActive:YES error: &activationError];
+    
+    NSError *setCategoryError = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
     
     [super viewDidLoad];
 }
