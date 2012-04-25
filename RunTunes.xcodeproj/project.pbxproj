@@ -28,6 +28,7 @@
 		EB337585143618F5003C5E93 /* mainBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB337583143618F5003C5E93 /* mainBackground@2x.png */; };
 		EB33B4F0143617D30063F6AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB33B4EE143617D30063F6AB /* Default.png */; };
 		EB33B4F1143617D30063F6AB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB33B4EF143617D30063F6AB /* Default@2x.png */; };
+		EB4D84B5154526DB00409486 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4D84B4154526DB00409486 /* AVFoundation.framework */; };
 		EB5184D31523606B00F43478 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5184D21523606B00F43478 /* icon@2x.png */; };
 		EB65E44D14320EF7002D7C05 /* StarterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E44C14320EF7002D7C05 /* StarterViewController.mm */; };
 		EB65E45114320F99002D7C05 /* StarterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45014320F99002D7C05 /* StarterView.xib */; };
@@ -84,6 +85,7 @@
 		EB337583143618F5003C5E93 /* mainBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mainBackground@2x.png"; path = "Resources/Images/mainBackground@2x.png"; sourceTree = "<group>"; };
 		EB33B4EE143617D30063F6AB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Images/Default.png; sourceTree = "<group>"; };
 		EB33B4EF143617D30063F6AB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Images/Default@2x.png"; sourceTree = "<group>"; };
+		EB4D84B4154526DB00409486 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EB5184D21523606B00F43478 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		EB65E44B14320EF7002D7C05 /* StarterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarterViewController.h; sourceTree = "<group>"; };
 		EB65E44C14320EF7002D7C05 /* StarterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StarterViewController.mm; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4D84B5154526DB00409486 /* AVFoundation.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -223,6 +226,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB4D84B4154526DB00409486 /* AVFoundation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
