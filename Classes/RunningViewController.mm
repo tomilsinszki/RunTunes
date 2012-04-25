@@ -53,7 +53,9 @@
 	[accelerometer setUpdateInterval:0.01];                                                                                                                                
     
 	AccelerationAnalyzer *currentAnalyzer = [[AccelerationAnalyzer alloc] initWithNumberOfSamples:sampleSize];                                                             
-	[self setAnalyzer:currentAnalyzer];                                                                                                                                    
+	[self setAnalyzer:currentAnalyzer];      
+    
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
     
 	audioPlayer = [[AudioPlayer alloc] init];
 	[audioPlayer setUpPlayback];
