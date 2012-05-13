@@ -32,6 +32,13 @@
 		RunningViewController *runningController = [[RunningViewController alloc]
                                                     initWithNibName:@"RunningView"
                                                     bundle:nil];
+        
+        self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc]
+                                                  initWithTitle:@"Back" 
+                                                  style:UIBarButtonItemStylePlain 
+                                                  target:nil
+                                                  action:nil] autorelease];
+        
         [self setRunningViewController:runningController];
         [runningController release];
 	}
@@ -44,6 +51,13 @@
 		TracklistViewController *tracklistController = [[TracklistViewController alloc]
                                                         initWithNibName:@"TracklistView"
                                                         bundle:nil];
+
+        self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc]
+                                                  initWithTitle:@"Back" 
+                                                  style:UIBarButtonItemStylePlain 
+                                                  target:nil
+                                                  action:nil] autorelease];
+        
         [self setTracklistViewController:tracklistController];
         [tracklistController release];
 	}

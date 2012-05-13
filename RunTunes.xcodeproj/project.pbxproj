@@ -563,6 +563,7 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Typogravity Kft";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Typogravity Kft";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -570,7 +571,8 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D0D48C72-E7FC-4C0D-9898-328652B144A6";
+				PROVISIONING_PROFILE = "B4FDC683-B2CA-40C8-82F7-F138879720B7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B4FDC683-B2CA-40C8-82F7-F138879720B7";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad Hoc Distribution";
