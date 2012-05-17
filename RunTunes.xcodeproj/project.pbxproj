@@ -29,13 +29,13 @@
 		EB33B4F0143617D30063F6AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB33B4EE143617D30063F6AB /* Default.png */; };
 		EB33B4F1143617D30063F6AB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB33B4EF143617D30063F6AB /* Default@2x.png */; };
 		EB4D84B5154526DB00409486 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4D84B4154526DB00409486 /* AVFoundation.framework */; };
-		EB5184D31523606B00F43478 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5184D21523606B00F43478 /* icon@2x.png */; };
 		EB65E44D14320EF7002D7C05 /* StarterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E44C14320EF7002D7C05 /* StarterViewController.mm */; };
 		EB65E45114320F99002D7C05 /* StarterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45014320F99002D7C05 /* StarterView.xib */; };
 		EB65E4541432192D002D7C05 /* RunningViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB65E4531432192C002D7C05 /* RunningViewController.mm */; };
 		EB65E45614321975002D7C05 /* RunningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB65E45514321975002D7C05 /* RunningView.xib */; };
 		EB7343A7143625BF0023227B /* runningBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7343A5143625BF0023227B /* runningBackground.png */; };
 		EB7343A8143625BF0023227B /* runningBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7343A6143625BF0023227B /* runningBackground@2x.png */; };
+		EB9C8D2D15600A6000659372 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9C8D2C15600A6000659372 /* icon@2x.png */; };
 		EBA6554F130A6762002961E1 /* AccelerationAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */; };
 		EBA65550130A6762002961E1 /* CyclicArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6554E130A6762002961E1 /* CyclicArray.m */; };
 		EBA65557130A6778002961E1 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBA65554130A6778002961E1 /* AudioFileReader.mm */; };
@@ -86,7 +86,6 @@
 		EB33B4EE143617D30063F6AB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Images/Default.png; sourceTree = "<group>"; };
 		EB33B4EF143617D30063F6AB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Images/Default@2x.png"; sourceTree = "<group>"; };
 		EB4D84B4154526DB00409486 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		EB5184D21523606B00F43478 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		EB65E44B14320EF7002D7C05 /* StarterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarterViewController.h; sourceTree = "<group>"; };
 		EB65E44C14320EF7002D7C05 /* StarterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StarterViewController.mm; sourceTree = "<group>"; };
 		EB65E45014320F99002D7C05 /* StarterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarterView.xib; path = Resources/StarterView.xib; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		EB65E45514321975002D7C05 /* RunningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RunningView.xib; path = Resources/RunningView.xib; sourceTree = "<group>"; };
 		EB7343A5143625BF0023227B /* runningBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = runningBackground.png; path = Resources/Images/runningBackground.png; sourceTree = "<group>"; };
 		EB7343A6143625BF0023227B /* runningBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "runningBackground@2x.png"; path = "Resources/Images/runningBackground@2x.png"; sourceTree = "<group>"; };
+		EB9C8D2C15600A6000659372 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
 		EBA6554B130A6762002961E1 /* AccelerationAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccelerationAnalyzer.h; path = AccelerationAnalyzer/AccelerationAnalyzer.h; sourceTree = "<group>"; };
 		EBA6554C130A6762002961E1 /* AccelerationAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccelerationAnalyzer.m; path = AccelerationAnalyzer/AccelerationAnalyzer.m; sourceTree = "<group>"; };
 		EBA6554D130A6762002961E1 /* CyclicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CyclicArray.h; path = AccelerationAnalyzer/CyclicArray.h; sourceTree = "<group>"; };
@@ -239,6 +239,7 @@
 		EB1771EF1308725B0049F239 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EB9C8D2C15600A6000659372 /* icon@2x.png */,
 				EB7343A5143625BF0023227B /* runningBackground.png */,
 				EB7343A6143625BF0023227B /* runningBackground@2x.png */,
 				EB199A83143622EA00B5F5FA /* mainChangemixButton.png */,
@@ -252,7 +253,6 @@
 				EB33B4EE143617D30063F6AB /* Default.png */,
 				EB33B4EF143617D30063F6AB /* Default@2x.png */,
 				EB1772BF13088F430049F239 /* icon.png */,
-				EB5184D21523606B00F43478 /* icon@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 				EB7343A8143625BF0023227B /* runningBackground@2x.png in Resources */,
 				EBF40C3314362BCA00377AD1 /* TracklistView.xib in Resources */,
 				EB08062A14474205004839A3 /* 135bpm.mp4 in Resources */,
-				EB5184D31523606B00F43478 /* icon@2x.png in Resources */,
+				EB9C8D2D15600A6000659372 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +466,7 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -475,7 +476,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5AD1D727-F1AF-4F20-A021-2F2CAAA1910A";
 			};
 			name = Debug;
 		};
@@ -488,14 +489,13 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				CODE_SIGN_ENTITLEMENTS = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Typogravity Kft";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RunTunes_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -505,14 +505,15 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
+				PROVISIONING_PROFILE = "5AD1D727-F1AF-4F20-A021-2F2CAAA1910A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5AD1D727-F1AF-4F20-A021-2F2CAAA1910A";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -521,8 +522,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tamas Ilsinszki (Y9AJ2M4B25)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Typogravity Kft";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Typogravity Kft";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -530,7 +531,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "4FA33FDE-F0A7-4165-8C5A-E8AB632A4067";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -540,7 +540,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Typogravity Kft";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Typogravity Kft";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -548,8 +548,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "D0D48C72-E7FC-4C0D-9898-328652B144A6";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = "Ad Hoc Distribution";
@@ -571,8 +569,6 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
-				PROVISIONING_PROFILE = "B4FDC683-B2CA-40C8-82F7-F138879720B7";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B4FDC683-B2CA-40C8-82F7-F138879720B7";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad Hoc Distribution";

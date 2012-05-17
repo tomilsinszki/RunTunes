@@ -94,8 +94,12 @@
     NSURL *storeURL = [NSURL fileURLWithPath:storePath];
     
     NSError *error = nil;
+    
+    NSDictionary *options = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:1]
+                                                        forKey:NSReadOnlyPersistentStoreOption];
+    
     persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) 
+    if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) 
     {
         
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);

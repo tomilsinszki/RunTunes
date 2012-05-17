@@ -108,11 +108,14 @@
     NSEnumerator *mixEnumerator = [mixes objectEnumerator];
     NSManagedObject *mix;
     while (( mix = [mixEnumerator nextObject] )) {
-        NSArray *tracks = [mix valueForKey:@"trackOfMix"];
-        NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"artistName" 
-                                                                         ascending:TRUE 
-                                                                          selector:@selector(localizedCompare:)];
-        NSArray *orderedTracks = [tracks sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        NSMutableSet *tracks = [mix valueForKey:@"trackOfMix"];
+                
+        NSSortDescriptor *sortDescriptor= [[[NSSortDescriptor alloc] initWithKey:@"artistName"
+                                                                       ascending:TRUE]
+                                           autorelease];
+        
+        NSArray *orderedTracks = [[tracks allObjects] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+
         [tracksInSelectedPackage addObjectsFromArray:orderedTracks];
     }
     
