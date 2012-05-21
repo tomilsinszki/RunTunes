@@ -373,6 +373,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RunTunes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -476,7 +479,6 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "RunTunes-Info.plist";
 				PRODUCT_NAME = RunTunes;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5AD1D727-F1AF-4F20-A021-2F2CAAA1910A";
 			};
 			name = Debug;
 		};
@@ -511,9 +513,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
-				PROVISIONING_PROFILE = "5AD1D727-F1AF-4F20-A021-2F2CAAA1910A";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5AD1D727-F1AF-4F20-A021-2F2CAAA1910A";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -530,7 +529,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -547,7 +545,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = "Ad Hoc Distribution";
