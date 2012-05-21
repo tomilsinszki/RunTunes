@@ -95,12 +95,6 @@
     [[self view] setBackgroundColor:backgroundImage];
     [backgroundImage release];
     
-    NSError *activationError = nil;
-    [[AVAudioSession sharedInstance] setActive:YES error: &activationError];
-    
-    NSError *setCategoryError = nil;
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
-    
     [super viewDidLoad];
 }
 

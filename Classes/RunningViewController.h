@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "AudioPlayer.h"
 #import "AccelerationAnalyzer.h"
 
 
-@interface RunningViewController : UIViewController <UIAccelerometerDelegate> {
+@interface RunningViewController : UIViewController <UIAccelerometerDelegate, AVAudioSessionDelegate> {
 	NSInteger sampleSize;
 	NSUInteger sampleCount;
 	AccelerationAnalyzer *analyzer;

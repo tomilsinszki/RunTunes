@@ -43,6 +43,12 @@
     [[self view] setBackgroundColor:backgroundImage];
     [backgroundImage release];
     
+    NSError *activationError = nil;
+    NSError *setCategoryError = nil;
+    [[AVAudioSession sharedInstance] setActive:YES error: &activationError];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
+    [[AVAudioSession sharedInstance] setDelegate:self];
+    
     sampleSize = 512;
 	sampleCount = 0;
 	
@@ -104,5 +110,27 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (void)beginInterruption {
+    [audioPlayer disposeAudioFileReader];
+    [audioPlayer release];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:[audioPlayer getFilePacketIndex] forKey:@"audioFileCurrentPacketIndex"];
+    [defaults synchronize];
+}
+
+- (void)endInterruption {
+    audioPlayer = [[AudioPlayer alloc] init];
+	[audioPlayer setUpPlayback];
+	NSString *audioFilePath = [[NSBundle mainBundle] pathForResource:@"135bpm" ofType:@"mp4"];
+	[audioPlayer setAudioFilePath:audioFilePath];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [audioPlayer setFilePacketIndex:[defaults integerForKey:@"audioFileCurrentPacketIndex"]];
+	[audioPlayer setUpAllBuffers];
+    [audioPlayer startPlayback];
+}
+
 
 @end
